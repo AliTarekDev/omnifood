@@ -58,7 +58,8 @@ body {
   color: #555;
 }
 .btn:link,
-btn:visited {
+.btn:visited,
+.btn {
   display: inline-block;
   background-color: #e67e22;
   color: #fff;
@@ -67,6 +68,10 @@ btn:visited {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   transition: all 1s;
 }
@@ -82,6 +87,18 @@ btn:visited {
 }
 .btn--outline:link,
 .btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
   background-color: #fff;
   color: #555;
 }
@@ -205,7 +222,6 @@ strong {
   color: #e67e22;
 }
 
-
 /***Helper Classes**/
 
 .margin-right-sm {
@@ -218,6 +234,10 @@ strong {
 
 .margin-bottom--md {
   margin-bottom: 8.4rem;
+}
+
+.margin-top--md {
+  margin-top: 8.4rem;
 }
 .center-text {
   text-align: center;
@@ -236,7 +256,7 @@ strong {
   letter-spacing: 0.75;
   margin-bottom: 3.2rem;
 }
-.plan-price{
+.plan-price {
   font-size: 6.2rem;
   font-weight: 600;
   color: #333;
@@ -249,7 +269,7 @@ strong {
   margin-right: 0.8rem;
 }
 
-.plan-text{
+.plan-text {
   font-size: 1.6rem;
   line-height: 1.6;
   color: #6f6f6f;
@@ -257,4 +277,12 @@ strong {
 .plan-sign-up {
   text-align: center;
   margin-top: 4.8rem;
+}
+
+.nav-fixed {
+  /* background: #fff !important; */
+  box-shadow: 5px 5px 5px #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
